@@ -5,7 +5,7 @@ const app = express()
 connectToMongo();      
 app.use(cors())
 
-const port = process.env.PORT || 5000
+const port = 5000
 
 app.use(express.json())  // : to get request body in form of js object
 
