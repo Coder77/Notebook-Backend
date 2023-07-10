@@ -9,7 +9,7 @@ const fetchUser = require('../middleware/fetchUser')
 
 // Create a User using: POST "/api/auth/createUser" . Doesn't require Auth
 router.post('/createUser',[
-    body('name','Name of min. length 3 is required').isLength({min: 1}),
+    body('name','Name of min. length 1 is required').isLength({min: 1}),
     body('email','valid email isRequired').isEmail(),
     body('password','Password cannot be blank').isLength({min: 5})
 ],
