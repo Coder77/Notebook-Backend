@@ -13,6 +13,11 @@ router.post('/createUser',[
     body('email','valid email isRequired').isEmail(),
     body('password','Password cannot be blank').isLength({min: 5})
 ],
+//Used for syncing of the front end page
+
+
+
+            
 async (req,res)=>{
 
     let success=false;
